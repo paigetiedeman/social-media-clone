@@ -5,9 +5,17 @@ import profileImage from './../img/profile.png';
 function Post(props) {
   return (
     <React.Fragment>
-      <img src={profileImage} alt="profile image"></img>
-      <h3><strong>{props.names}</strong></h3>
-      <p>{props.message}</p>
+      <div className="post">
+        <div className="row">
+          <div className="col">
+            <img src={profileImage} alt="profile image"></img>
+          </div>
+          <div className="col">
+            <h3><strong>{props.names}</strong></h3>
+            <p>{props.message}</p>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 }
