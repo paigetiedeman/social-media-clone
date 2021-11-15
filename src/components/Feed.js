@@ -10,26 +10,30 @@ const postList = [
   {
     names: 'Lorem Ipsum',
     message: 'Suspendisse faucibus interdum.'
+  },
+  {
+    names: "First Last",
+    message: "la djhdsikhns shdkn"
   }
 ];
 
-function Feed(){
+function Feed(props){
   return (
     <React.Fragment>
       <div className="feed">
         <div className="row">
-          <div className="col">
+          <div className="col-2">
           <img className="mini-image" src={miniImage} alt="square image"></img>
           </div>
-          <div className="col">
+          <div className="col-6">
           <input type="text" className="form-control" placeholder="What's happening?"/>
           </div>
-          <div className="col">
+          <div className="col-3">
           <button className="btn btn-outline-secondary">Holler</button>
           </div>
-        {postList.map((post, index) => 
-          <Post names={post.names}
-          message={post.message}
+        {postList.map((friend, index) => 
+          <Post names={friend.names}
+          message={friend.message}
           key={index}/>
           )}
         </div>
@@ -37,5 +41,6 @@ function Feed(){
     </React.Fragment>
   );
 }
+
 
 export default Feed;

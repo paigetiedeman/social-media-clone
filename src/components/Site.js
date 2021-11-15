@@ -1,7 +1,9 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
-import Recommended from './Recommended';
+// import Recommended from './Recommended';
+import RecList from './RecList';
+
 
 function Site() {
   return (
@@ -9,7 +11,7 @@ function Site() {
       <div className="row">
         <div className="col-md-3"><Sidebar /></div>
         <div className="col-md-6"><Feed /></div>
-        <div className="col-md-3"><Recommended /></div>
+        <div className="col-md-3"><RecList /></div>
       </div>
     </React.Fragment>
   );

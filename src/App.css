@@ -45,6 +45,7 @@
 .mini-image {
   width: 100px;
   height: 100px;
+  padding-bottom: 10px;
 }
 
 .feed {
