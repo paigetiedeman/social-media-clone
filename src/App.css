@@ -17,7 +17,7 @@
 .bio {
   border: 2px solid navy;
   height: 300px;
-  padding: 5px;
+  padding: 10px;
   margin-top: 10px;
 }
 
@@ -57,4 +57,8 @@
 .post {
   border: 2px solid grey;
   padding: 10px;
+}
+
+.bar {
+  padding-top: 20px;
 }

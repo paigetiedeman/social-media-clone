@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import profileImage from './../img/profile.png';
 
 function Post(props) {
   return (
@@ -8,9 +7,9 @@ function Post(props) {
       <div className="post">
         <div className="row">
           <div className="col">
-            <img src={profileImage} alt="profile image"></img>
+            <img className="mini-image" src={props.pics}></img>
           </div>
-          <div className="col">
+          <div className="col-9">
             <h3><strong>{props.names}</strong></h3>
             <p>{props.message}</p>
           </div>
@@ -22,7 +21,8 @@ function Post(props) {
 
 Post.propTypes = {
   names: PropTypes.string,
-  message: PropTypes.string
+  message: PropTypes.string,
+  pics: PropTypes.string
 };
 
 export default Post;

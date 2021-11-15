@@ -16,11 +16,13 @@ const recList = [
 function RecList(){
   return(
     <React.Fragment>
+      <div className="recommended">
       <h3>Recommended Friends</h3>
       {recList.map((friend, index) => 
           <Recommended names={friend.names}
           key={index}/>
           )}
+      </div>
     </React.Fragment>
   );
 }
