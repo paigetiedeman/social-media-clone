@@ -1,7 +1,6 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Feed from './Feed';
-// import Recommended from './Recommended';
 import RecList from './RecList';
 
 

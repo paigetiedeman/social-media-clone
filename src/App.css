@@ -12,6 +12,7 @@
   border: 2px solid navy;
   text-align: center;
   padding: 10px;
+  background-color: white;
 }
 
 .bio {
@@ -19,6 +20,7 @@
   height: 300px;
   padding: 10px;
   margin-top: 10px;
+  background-color: white;
 }
 
 .profile-pic {
@@ -40,6 +42,7 @@
   margin-top: 150px;
   border: 2px solid navy;
   margin-right: 20px;
+  background-color: white;
 }
 
 .mini-image {
@@ -52,6 +55,7 @@
   margin-top: 150px;
   border: 2px solid navy;
   padding: 10px;
+  background-color: white;
 }
 
 .post {
