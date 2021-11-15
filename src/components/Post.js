@@ -5,8 +5,15 @@ function Post(props) {
   return (
     <React.Fragment>
       <img src="https://placehold.it/"></img>
-      <h3>First Last</h3>
-      <p>Natoque penatibus et magnis dis parturient montes. Est ante in nibh mauris cursus mattis.</p>
+      <h3><strong>{props.names}</strong></h3>
+      <p>{props.message}</p>
     </React.Fragment>
   );
 }
+
+Post.propTypes = {
+  names: PropTypes.string,
+  message: PropTypes.string
+};
+
+export default Post;
