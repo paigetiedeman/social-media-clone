@@ -5,13 +5,25 @@ function Header() {
   return (
     <React.Fragment>
       <nav className="navbar fixed-top navbar-light bg-light">
-        <p className="navbar-brand" >Home</p>
-        <p className="navbar-brand" >Notifications</p>
-        <p className="navbar-brand" >Messages</p>
-        <h1 className="navbar-brand" >Make Friends</h1>
+        <div className="btn-group" role="group">
+          <button className="btn btn-outline-secondary" type="button">Home</button>
+          <button className="btn btn-outline-secondary" type="button">Notifications</button>
+          <button className="btn btn-outline-secondary" type="button">Messages</button>
+          </div>
+          <h1 className="rainbow-text">Make Friends</h1>
         <form className="form-inline">
-          <input className="form-control mr-sm-2 form-inline" type="search" placeholder="Search" aria-label="Search" />
-          <button className="btn btn-outline-primary my-2 my-sm-0 form-inline" type="submit">Holler</button>
+          <input
+            className="form-control mr-sm-2 form-inline"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button
+            className="btn btn-outline-primary my-2 my-sm-0 form-inline"
+            type="submit"
+          >
+            Holler
+          </button>
         </form>
       </nav>
     </React.Fragment>
